@@ -24,3 +24,4 @@ Route::get('/registro',[RegistroController::class,'index'])->name('registro');
 Route::post('/registro',[RegistroController::class,"store"])->name('registro');
 Route::get('/{user:name}',[SecureurlController::class,'index'])->name('dash');
 Route::post('/logout',[LogoutController::class,'store'])->name('logout');
+Route::get('/publicaciones/create',[SecureurlController::class,'create'])->name('publicaciones.create');

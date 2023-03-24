@@ -19,4 +19,8 @@ class SecureurlController extends Controller
             'user' => $user
         ]);
     }
+    public function create(){
+        //dd('Creando nueva publicación');
+        return view('publicaciones.create');
+    }
 }

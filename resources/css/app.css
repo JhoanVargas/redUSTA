@@ -15,5 +15,21 @@
 
 .left-seccion{
     width: 30%;
+    margin-left: 35%;
+    margin-top: 100px;
     height: auto;
+    border-radius: 50px;
+}
+.create-contenedor{
+    width: 60%;
+    margin-left: 20%;
+    border: solid blue;
+    padding: 50px 50px 50px 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+.titulo-create{
+    color: #1D4ED8;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

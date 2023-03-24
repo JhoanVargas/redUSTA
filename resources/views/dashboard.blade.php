@@ -1,6 +1,6 @@
 @extends('layaoutprincipal')
 <div class="left-seccion">
-<section style="font-family: Montserrat" class=" bg-[#071e34] font-medium items-center">
+<section style="font-family: Montserrat" class=" bg-[#071e34]">
 
     <section class="bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg">
         <div class="mt-6 ">
@@ -65,6 +65,29 @@
         duration-150
         ease-in-out"
         >Cerrar Sesión</button>
+        <br><br>
+        <a href="{{route('publicaciones.create')}}"
+        class="
+        w-full
+        px-6
+        py-2.5
+        bg-blue-600
+        text-white
+        font-medium
+        text-xs
+        leading-tight
+        uppercase
+        rounded
+        shadow-md
+        hover:bg-blue-700 hover:shadow-lg
+        focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+        active:bg-blue-800 active:shadow-lg
+        transition
+        duration-150
+        ease-in-out"
+        >
+        Nueva Publicación
+    </a>
     </form>
     @endauth
     </section>

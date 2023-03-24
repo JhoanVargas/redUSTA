@@ -14,9 +14,9 @@ class SecureurlController extends Controller
     }
     public function index(User $user)
     {
-        $users = User::all();
+    
         return view('dashboard',[
-            'users' => $users
+            'user' => $user
         ]);
     }
 }

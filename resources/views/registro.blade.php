@@ -92,7 +92,162 @@
             <p class="bg-red-600 text-white my-2 text-sm p-2 text-center">{{$message}}</p>
           @enderror
       </div>
+
+
+      <div class="form-group mb-6">
+        <input type="text" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+          placeholder="Nombre de Usuario"
+          name="username">
+          @error('username')
+            <p class="bg-red-600 text-white my-2 text-sm p-2 text-center">{{$message}}</p>
+          @enderror
+      </div>
+
+      <div class="form-group mb-6">
+        <input type="text" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+          placeholder="Programa Academico"
+          name="programa">
+          @error('programa')
+            <p class="bg-red-600 text-white my-2 text-sm p-2 text-center">{{$message}}</p>
+          @enderror
+      </div>
+
+      <div class="form-group mb-6">
+        <input type="text" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+          placeholder="Semestre Academico"
+          name="semestre">
+          @error('semestre')
+            <p class="bg-red-600 text-white my-2 text-sm p-2 text-center">{{$message}}</p>
+          @enderror
+      </div>
+
+      <div class="form-group mb-6">
+        <input type="text" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+          placeholder="Número de Celular"
+          name="celular">
+          @error('celular')
+            <p class="bg-red-600 text-white my-2 text-sm p-2 text-center">{{$message}}</p>
+          @enderror
+      </div>
       
+      <div class="form-group mb-6">
+        <input type="text" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+          placeholder="Dirección"
+          name="direccion">
+          @error('direccion')
+            <p class="bg-red-600 text-white my-2 text-sm p-2 text-center">{{$message}}</p>
+          @enderror
+      </div>
+
+      <div class="form-group mb-6">
+        <input type="text" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+          placeholder="Breve presentación"
+          name="presentacion">
+          @error('presentacion')
+            <p class="bg-red-600 text-white my-2 text-sm p-2 text-center">{{$message}}</p>
+          @enderror
+      </div>
+
+      <div class="form-group mb-6">
+        <input type="text" class="form-control block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput125"
+          placeholder="Genero"
+          name="genero">
+          @error('genero')
+            <p class="bg-red-600 text-white my-2 text-sm p-2 text-center">{{$message}}</p>
+          @enderror
+      </div>
+
       <button type="submit" class="
         w-full
         px-6

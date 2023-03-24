@@ -19,6 +19,6 @@ class SesionController extends Controller
             return back()->with('mensaje','Usuario o contraseña incorrecta');
 
         }
-        return redirect()->route('dash');
+        return redirect()->route('dash',['user'=> auth()->user()->name]);
     }
 }

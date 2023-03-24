@@ -8,7 +8,12 @@
     text-align: center;
     width: 40%;
     margin-left: 30%;
-    margin-top: 150px;
+    margin-top: 10px;
     border: solid #1D4ED8 5px;
     border-radius: 10px;
+}
+
+.left-seccion{
+    width: 30%;
+    height: auto;
 }

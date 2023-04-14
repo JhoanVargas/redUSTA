@@ -38,10 +38,6 @@
         <p class="text-emerald-400 font-semibold mt-2.5" >
             Género: {{$user->genero}}
         </p>
-
-
-    
-        
         <br><br>
         @auth
         <form action="{{route('logout')}}" method="POST">
@@ -91,7 +87,20 @@
     </form>
     @endauth
     </section>
-
-
 </section>
+</div>
+<br>
+<div class="left-seccion1">
+    @foreach ($posts as $post)
+    <div class="imagen_xd">
+    <h1>
+        {{$post->titulo}}
+    </h1>
+    <h4>
+        {{$post->descripcion}}
+    </h4>
+    <img src="{{asset('uploads').'/'.$post->imagen}}">
+    <br><br>
+</div>
+    @endforeach
 </div>

@@ -4,6 +4,7 @@ use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\SecureurlController;
 use App\Http\Controllers\SesionController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\imgController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 
@@ -25,3 +26,5 @@ Route::post('/registro',[RegistroController::class,"store"])->name('registro');
 Route::get('/{user:name}',[SecureurlController::class,'index'])->name('dash');
 Route::post('/logout',[LogoutController::class,'store'])->name('logout');
 Route::get('/publicaciones/create',[SecureurlController::class,'create'])->name('publicaciones.create');
+Route::post('/imgs',[imgController::class,'store'])->name('imagenes.store');
+Route::post('/publicaciones',[SecureurlController::class,'store'])->name('publicaciones.store');

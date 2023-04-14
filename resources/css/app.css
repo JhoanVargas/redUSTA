@@ -20,6 +20,23 @@
     height: auto;
     border-radius: 50px;
 }
+
+.left-seccion1{
+    display: grid;
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    border-radius: 50px;
+    grid-template-columns: 33% 33% 33%;
+}
+.imagen_xd{
+    border: blue solid 3px;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: min-content;
+    text-align: center;
+    font-size: large;
+}
 .create-contenedor{
     width: 60%;
     margin-left: 20%;

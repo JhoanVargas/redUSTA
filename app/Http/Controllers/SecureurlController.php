@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comentario;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Post;
+use LengthException;
 
 class SecureurlController extends Controller
 {
@@ -15,8 +17,8 @@ class SecureurlController extends Controller
     }
     public function index(User $user)
     {
-        $posts = Post::where("user_id",$user->id)->get();
-    
+        $posts = Post::where("user_id",$user->id)->paginate(3);
+
         return view('dashboard',[
             'user' => $user,
             'posts' => $posts
@@ -41,5 +43,24 @@ class SecureurlController extends Controller
             'user_id'=>auth()->user()->id
         ]);
         return redirect()->route('dash',['user'=>auth()->user()->name]);
+    }
+    public function show(Request $request,User $user,Post $post){
+        $comentarios = $post->comentario;
+        $likes = $post->like;
+        return view('publicaciones.show',[
+            'post'=>$post,
+            'user'=>$user,
+            'comentarios'=>$comentarios,
+            'likes'=>$likes->count(),
+        ]);
+
+    }
+
+    public function destroy(Post $post){
+
+        $this->authorize('delete',$post);
+        $post->delete();
+        return redirect()->route('dash',['user'=>auth()->user()->name]);
+
     }
 }

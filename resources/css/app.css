@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.contenedorShow{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 .contenedor{
     background-color: bisque;
     align-items: center;
@@ -16,9 +20,26 @@
 .left-seccion{
     width: 30%;
     margin-left: 35%;
-    margin-top: 100px;
+    margin-top: 50px;
     height: auto;
     border-radius: 50px;
+}
+.post-seccion{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    height: auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: #1D4ED8 solid 5px;
+    font-size: 20px;
+}
+.texto-rojo{
+    color: red;
+}
+.imagenPost{
+    width: 60%;
+    margin-left: 20%;
 }
 
 .left-seccion1{
@@ -37,6 +58,11 @@
     text-align: center;
     font-size: large;
 }
+.tituloImagen{
+    color: #1D4ED8;
+    font-size: larger;
+    font-weight: bold;
+}
 .create-contenedor{
     width: 60%;
     margin-left: 20%;
@@ -49,4 +75,21 @@
     color: #1D4ED8;
     font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.paginador{
+    width: 80%;
+    margin-left: 10%;
+}
+.imagen{
+    cursor: pointer;
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+.botonAdd{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 10px;
 }

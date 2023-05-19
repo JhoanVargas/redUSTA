@@ -63,4 +63,8 @@ class SecureurlController extends Controller
         return redirect()->route('dash',['user'=>auth()->user()->name]);
 
     }
+
+    public function showUsers(){
+        return view('users');
+    }
 }

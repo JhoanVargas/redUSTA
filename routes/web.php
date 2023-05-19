@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\comentarioController;
+use App\Http\Controllers\FeedController;
 use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\SecureurlController;
 use App\Http\Controllers\SesionController;
@@ -35,3 +36,5 @@ Route::post('comentarios',[comentarioController::class,'store'])->name('comentar
 Route::delete('/comentarios/{id}', [comentarioController::class,'destroy'])->name('comentarios.destroy');
 Route::delete('/posts/{post}', [SecureurlController::class,'destroy'])->name('publicaciones.destroy');
 Route::post('like',[LikeController::class,'store'])->name('like.store');
+Route::get('/feed/{user:name}',[FeedController::class,'index'])->name('users');
+

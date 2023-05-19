@@ -59,4 +59,8 @@ class User extends Authenticatable
     public function like(){
         return $this->hasMany(Like::class,'user_id');
     }
+    public function lastPost($id){
+        $registro = Post::where('user_id',$id)->latest()->first();
+    return $registro;
+    }
 }
